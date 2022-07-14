@@ -1,14 +1,244 @@
-\documentclass{article}
+\documentclass[a4paper, 12pt]{article}
+\usepackage[margin=0.8in]{geometry}
 \usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsfonts}
+\usepackage[T1]{fontenc}
+\usepackage{xfrac}
+\usepackage{amsthm}
 
-\title{Test}
+\usepackage[english, greek]{babel}
+\usepackage[T1, T2A]{fontenc}
+
+\newtheoremstyle{deault_theorem_style}
+{}                % Space above
+{2}                % Space below
+{\upshape}        % Theorem body font % (default is "\upshape")
+{}                % Indent amount
+{\bfseries}       % Theorem head font % (default is \mdseries)
+{}               % Punctuation after theorem head % default: no punctuation
+{ }               % Space after theorem head
+{}                % Theorem head spec
+
+\theoremstyle{deault_theorem_style}
+
+
+\newtheorem{protodefn}{Definition}[section]
+% \newenvironment{defn}{\begin{protodefn}}{\end{protodefn}}
+\newenvironment{defn}
+   {\colorlet{shadecolor}{black!6}\begin{shaded}\begin{protodefn}}
+   {\end{protodefn}\end{shaded}}
+% \newenvironment{defn}
+%    {\colorlet{shadecolor}{red!5}\begin{shaded}\begin{protodefn}}
+%    {\end{protodefn}\end{shaded}}
+
+% \newtheorem{defn}{Definition}[section]
+% \newtheorem{inote}[defn]{Important Note}
+\newtheorem{ppn}[protodefn]{Proposition}
+\newtheorem{eg}[protodefn]{Example}
+\newtheorem{lemma}[protodefn]{Lemma}
+\newtheorem{rmk}[protodefn]{Remark}
+\newtheorem{thm}[protodefn]{Theorem}
+\newtheorem{sqstn}[protodefn]{Sample Question}
+\newtheorem{algorithm}[protodefn]{Algorithm}
+\newtheorem{cor}[protodefn]{Corollary}
+
+\newtheorem{protoinote}[protodefn]{Important Note}
+\newenvironment{inote}{\begin{protoinote}}{\end{protoinote}}
+
+
+
+
+\title{Mathematics Pancyprian Examination Past Papers}
 \author{Andreas Mitillos}
 \date{July 2022}
 
 \begin{document}
 
-\maketitle
+\selectlanguage{english}
 
-\section{Introduction}
+\section{Mathematics Past Paper 2021}
+
+\subsection{Part A}
+
+\selectlanguage{english}
+\begin{sqstn}
+    \selectlanguage{greek}
+    Να υπολογίσετε το ολοκλήρωμα:
+    \[ \int (3x^2-e^x+\sin x - \pi ) dx \]
+\end{sqstn}
+
+\selectlanguage{english}
+\begin{sqstn}
+    \selectlanguage{greek}
+    Δίνεται η λέξη \textbf{ΠΑΝΔΗΜΙΑ}
+    \begin{enumerate}
+        \item Να βρείτε το πλήθος των αναγραμματισμών της
+        \item Να βρείτε το πλήθος των αναγραμματισμών της που αρχίζουν με το γράμμα \textbf{Π} και τελειώνουν με το γράμμα \textbf{Α}.
+    \end{enumerate}
+\end{sqstn}
+
+\selectlanguage{english}
+\begin{sqstn}
+    \selectlanguage{greek}
+    Να μετατρέψετε την πιο κάτω τριγωνομετρική παράσταση σε αλγεβρική παράσταση του $x$:
+    \[ \cos(\arcsin(4x)) \ , \ \ 0 \leq x \leq \frac{1}{4} \]
+\end{sqstn}
+
+\selectlanguage{english}
+\begin{sqstn}
+    \selectlanguage{greek}
+    \begin{enumerate}
+        \item Να διατυπώσετε τον ορισμό της έλλειψης 
+        \item Να βρείτε την εξίσωση της έλλειψης, με εστίες τα σημεία $Ε(4,0)$ και $Ε'(-4,0)$, αν το άθροισμα των αποστάσεων τυχαίου σημείου της έλλειψης από τις δύο εστίες της είναι ίσο με $10$ μονάδες. 
+    \end{enumerate}
+\end{sqstn}
+
+\selectlanguage{english}
+\begin{sqstn}
+    \selectlanguage{greek}
+    Δίνεται το χωριό το οποίο περικλείεται μεταξύ της γραφικής παράστασης της συνάρτησης με τύπο $y = \ln x \ , \ x \in (0, + \infty)$, της γραφικής παράστασης της ευθείας $y=2$ και των αξόνων των συντεταγμένων. Να βρείτε:
+    \begin{enumerate}
+        \item το εμβαδόν του χωρίου
+        \item oτν όγκο που παράγεται από την πλήρη περιστροφή του χωρίου από τον άξονα $y'y$.
+    \end{enumerate}
+\end{sqstn}
+
+\selectlanguage{english}
+\begin{sqstn}
+    \selectlanguage{greek}
+    για να παρακολουθήσουν πέντε φοιτητές ένα σεμινάριο, με φυσική παρουσία, θα πρέπει να υποβληθούν σε έναν από τους παρακάτων τρεις ελέγχους:
+    \begin{enumerate}
+        \item μοριακό έλεγχο
+        \item ρινικό έλεγχο ταχείας ανίχνευσης 
+        \item έλεγχο ταχείας ανίχνευσης με δείγμα σάλιου
+    \end{enumerate}
+\end{sqstn}
+
+\selectlanguage{english}
+\begin{sqstn}
+    \selectlanguage{greek}
+    Δίνεται η συνάρτηση $f(x) = \ln (x^2 + 1) - x^2 \ , \ x \in \mathbb{R}$.
+    \begin{enumerate}
+        \item Να μελετήσετε τη συνάρτηση $f$ ως προς την μονοτονία και τα τοπικά ακρότατα. 
+        \item Να αποδείξετε ότι: $ \ \ln (x^2 + 1 ) \leq x^2$, για κάθε $ \ x \in \mathbb{R}$.
+    \end{enumerate}
+\end{sqstn}
+
+\selectlanguage{english}
+\begin{sqstn}
+    \selectlanguage{greek}
+    Δίνεται η έλλειψη $\frac{x^2}{\alpha^2} + \frac{y^2}{\beta ^2} = 1 $ με $\alpha > \beta$ και το τυχαίο σημείο της $P(\alpha \cos(\theta), \beta \sin (\theta)) \ , \ \theta \in \left ( 0 , \frac{\pi}{2} \right )$. Η κάθετη της έλλειψης στο σημείο $P$ τέμνει τον άξονα $y'y$ στο σημείο $\Lambda$.
+
+    \begin{enumerate}
+        \item Να δείξετε ότι η εξίσωση της κάθετης της έλλειψης στο σημείο $P$ είναι η 
+        \[ \alpha \sin (\theta) x - (\beta \cos (\theta)) y = (\alpha^2 - \beta ^2)\sin(\theta)\cos(\theta) \]
+
+        \item Να δείξετε ότι η εξίσωση της καμπύλης στην οποία ανήκει ο γεωμετρικός τόπος του μέσο $M$ του ευθύγραμμου τμήματος $P \Lambda$ είναι έλλειψη.
+    \end{enumerate}
+\end{sqstn}
+
+\selectlanguage{english}
+\begin{sqstn}
+    \selectlanguage{greek}
+    Με την υπόθεση ότι $1 - \sin(2x) + 2\cos (2x) \neq 0$, για κάθε $x \in \left ( 0 , \frac{\pi}{4} \right )$ και χρησιμοποιώντας την αντικατάσταση που δίνεται ή με οποιονδήποτε άλλο τρόπο να υπολογίσετε το ολοκλήρωμα:  
+    
+    \[ \int \frac{dx}{1 - \sin (2x) + 2 \cos (2x)} \ , \ t = \tan (x) \ , \ x \in \left ( 0 , \frac{\pi}{4} \right ) \]
+\end{sqstn}
+
+\selectlanguage{english}
+\begin{sqstn}
+    \selectlanguage{greek}
+    Να δείξετε ότι η εξίσωση $\ln x = \frac{1}{x}$ έχει ακριβώς μία ρίζα στο διάστημα $(1,2)$.
+\end{sqstn}
+
+\selectlanguage{english}
+
+\subsection{Part B}
+
+\begin{sqstn}
+    \selectlanguage{greek}
+    Δίνεται η συνάρτηση $f$ με τύπο:  
+    
+    \[ f(x) = \frac{x^2 + x - 2}{x-2} \]  
+    Να βρείτε το πεδίο ορισμού της, τα σημεία τομής της με τους άξονες των συντεταγμένων, τα διαστήματα μονοτονίας, τα τοπικά ακρότατα, τις ασύμπτωτες της γραφικής της παράστασης και να την παραστήσετε γραφικά.
+\end{sqstn}
+
+\begin{sqstn}
+    \selectlanguage{greek}
+    Δίνονται οι συναρτήσεις $h: \mathbb{R} \to \mathbb{R}$ και $g : \mathbb{R} \to \mathbb{R}$. Η συνάρτηση $h$ είναι δύο φορές παραγωγίσιμη και ισχύει ότι $h'(x) \neq 0$, για κάθε $x \in \mathbb{R}$ και $g(x) \cdot h'(x) = h(x)$, για κάθε $x \in \mathbb{R}$. Αν η συνάρτηση $h$ παρουσιάζει σημείο καμπής στο $x_0$, να βρείτε την προσανατολισμένη γωνία που σχηματίζει η εφαπτομένη της συνάρτησης $g$ στο $x_0$ με τον άξονα $x'x$.
+\end{sqstn}
+
+\newpage
+
+\section{Mathematics Past Paper 2019 (C34)}
+
+\begin{sqstn}
+    \begin{enumerate}
+        \item Express $7\sin (2\theta) - 2 \cos (2 \theta)$ in the form $R\sin(2 \theta - \alpha)$, where $R$ and $\alpha$ are constants, $R>0$ and $0< \alpha < 90 ^o$. Give the exact value of $R$ and give the value of $\alpha$ to $2$ decimal places.
+
+        \item Hence solve, for $0 \leq \theta < 90^o$, the equation 
+        \[ 7 \sin (2 \theta ) - 2 \cos (2 \theta) = 4 \]
+        giving your answers in degrees to one decimal place. 
+
+        \item Express $28 \sin (\theta)\cos(\theta) + 8 \sin ^2 (\theta)$ in the form $a \sin (2\theta) + b \cos (2\theta) + c$, where $a, \ b$ and $c$ are constants to be found. 
+
+        \item Use your answers to part (a) and part (c) to deduce the exact maximum value of $28 \sin (\theta) \cos (\theta) + 8 \sin ^2 (\theta)$
+    \end{enumerate}
+\end{sqstn}
+
+\begin{sqstn}
+    Given that 
+    \[ \frac{3x^2 + 4x - 7}{(x+1)(x-3)} \equiv A + \frac{B}{x+1} + \frac{C}{x-3} \]
+    \begin{enumerate}
+        \item find the values of the constants $A$, $B$ and $C$.
+        \item Hence, or otherwise, find the series expansion of 
+        \[ \frac{3x^2 + 4x - 7}{(x+1)(x-3)} \ \ \ \ |x| < 1 \]
+        in ascending powers of $x$, up to and including the term in $x^2$.
+        \flushleft Give each coefficient as a simplified fraction.
+    \end{enumerate}
+\end{sqstn}
+
+\begin{sqstn}
+    The function $f$ is defined by 
+    \[ f(x) = 2x^2 + 3kx + k^2 \ \ \ \ x\in \mathbb{R}, \ -4k \leq x \leq 0 \]
+    where $k$ is a positive constant.
+    \begin{enumerate}
+        \item Find, in terms of $k$, the range of $f$.
+    \end{enumerate}
+    The function $g$ is defined by 
+    \[ g(x) = 2k - 3x \ \ \ \ x \in \mathbb{R} \]
+    Given that $gf(-2) = -12$
+    \begin{enumerate}
+        \item find the possible values of $k$.
+    \end{enumerate}
+\end{sqstn}
+
+\begin{sqstn}
+    The curve $C$ has equation
+    \[ 81y^3 + 64x^2y + 256x = 0 \]
+    \begin{enumerate}
+        \item Find $\frac{\text{dy}}{\text{dx}}$ in terms of $x$ and $y$.
+        \item Hence find the coordinates of the points on $C$ where $\frac{\text{dy}}{\text{dx}}=0$
+    \end{enumerate}
+\end{sqstn}
+
+\begin{sqstn}
+    The angle $x$ and the angle $y$ are such that 
+    \[ \tan (x) = m \ \text{ and } \ 4\tan y = 8m +5 \]
+    where $m$ is a constant.
+    
+    \flushleft Given that $16 \sec^2 x + 16 \sec^2 y = 537$
+    
+    \begin{enumerate}
+        \item find the two possible values of $m$
+    \end{enumerate}  
+
+    \flushleft Given that the angle $x$ and the angle $y$ are acute, find the exact value of 
+    
+    \begin{enumerate}
+        \item $\sin (x)$
+        \item $\cot (y)$
+    \end{enumerate}
+\end{sqstn}
 
 \end{document}
